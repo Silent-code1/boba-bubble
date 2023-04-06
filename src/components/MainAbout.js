@@ -1,26 +1,33 @@
-import React from 'react'
+import React from 'react';
 import styles from '../style';
 
 const MainAbout = () => {
   return (
     <section
-      id='main'
-      className={`w-full flex py-6 justify-between items-center ${styles.paddingY}`}
+      id='home'
+      className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
     >
-      <div className='flex flex-row justify-between items-center w-full'>
-        <h1>
-          Call it <br className='sm:block hidden' />{' '}
-          <span className='text-gradient'>Bubble tea</span>, milk tea or{' '}
-          <br className='sm:block hidden' />{' '}
-          <span className='text-gradient'>Boba</span> — it’s delicious!
-        </h1>
-        Call it milk tea, boba, bubble tea or pearl milk tea, It’s got many
-        names. They all mean that delicious, sweet cold drink that usually comes
-        with different toppings. From the chewy boba pearls to the scrumptious
-        red bean.
+      <div className={`flex-1 flex flex-col items-center`}>
+        <div className='flex justify-between items-center w-full'>
+          <h1 className='flex-1 font-poppins font-semibold ss:text-[62px] text-[42px] text-white ss:leading-[100.8px] leading-[75px]'>
+            Call it
+            <span className='text-gradient'>Bubble tea</span>, milk tea or{' '}
+            <br className='sm:block hidden' />{' '}
+            <span className='text-gradient'>Boba</span> — it’s delicious!
+          </h1>
+        </div>
+
+        <p className={`${styles.paragraph} max-w-[870px] mt-5`}>
+          Call it milk tea, boba, bubble tea or pearl milk tea, It’s got many
+          names. They all mean that delicious, sweet cold drink that usually
+          comes with different toppings. From the chewy boba pearls to the
+          scrumptious red bean.
+        </p>
       </div>
+
+    
     </section>
   );
-}
+};
 
 export default MainAbout;
