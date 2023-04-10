@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from '../style';
+import IngredCard from './IngredCard';
+import { ingredients } from '../constants';
 
 const MainAbout = () => {
   return (
@@ -9,9 +11,9 @@ const MainAbout = () => {
     >
       <div className={`flex-1 flex flex-col items-center`}>
         <div className='flex justify-between items-center w-full'>
-          <h1 className='flex-1 font-poppins font-semibold ss:text-[62px] text-[42px] text-white ss:leading-[100.8px] leading-[75px]'>
+          <h1 className='flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]'>
             Call it
-            <span className='text-gradient'>Bubble tea</span>, milk tea or{' '}
+            <span className='text-gradient'> Bubble tea</span>, milk tea or{' '}
             <br className='sm:block hidden' />{' '}
             <span className='text-gradient'>Boba</span> — it’s delicious!
           </h1>
@@ -24,8 +26,11 @@ const MainAbout = () => {
           scrumptious red bean.
         </p>
       </div>
-
-    
+      <div className='flex-1 flex justify-between items-center'>
+        {ingredients.map((card) => (
+          <IngredCard key={card.id} {...card} />
+        ))}
+      </div>
     </section>
   );
 };
