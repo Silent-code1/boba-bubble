@@ -2,6 +2,8 @@ import React from 'react';
 import styles from '../style';
 import IngredCard from './IngredCard';
 import { ingredients } from '../constants';
+import Button from './Button';
+
 
 const MainAbout = () => {
   return (
@@ -17,7 +19,6 @@ const MainAbout = () => {
             <span className='text-gradient'> Boba</span> — it’s delicious!
           </h1>
         </div>
-
         <p className={`${styles.paragraph} max-w-[1200px] mt-5`}>
           Call it milk tea, boba, bubble tea or pearl milk tea, It’s got many
           names. They all mean that delicious, sweet cold drink that usually
@@ -32,6 +33,13 @@ const MainAbout = () => {
           <IngredCard key={card.id} {...card} />
         ))}
       </div>
+      <p className={`${styles.paragraph} max-w-[900px] mt-2`}>
+        Call it milk tea, boba, bubble tea or pearl milk tea, It’s got many
+        names. They all mean that delicious, sweet cold drink that usually comes
+        with different toppings. From the chewy boba pearls to the scrumptious
+        red bean.
+      </p>
+      <Button styles={`mt-10`} href='#TeeChoose' />
     </section>
   );
 };
