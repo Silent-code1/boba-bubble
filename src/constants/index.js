@@ -8,7 +8,7 @@ export const navLinks = [
     title: 'Home',
   },
   {
-    id: 'tee-choose',
+    id: 'TeeChoose',
     title: 'Mix your tea',
   },
   {

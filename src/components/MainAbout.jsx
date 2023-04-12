@@ -15,8 +15,8 @@ const MainAbout = () => {
         <div className='flex justify-between items-center w-full'>
           <h1 className='flex-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ss:leading-[100.8px] leading-[75px]'>
             Call it
-            <span className='text-gradient'> Bubble tea</span>, milk tea or
-            <span className='text-gradient'> Boba</span> — it’s delicious!
+            <span className='text-yellow-400'> Bubble tea</span>, milk tea or
+            <span className='text-yellow-400'> Boba</span> — it’s delicious!
           </h1>
         </div>
         <p className={`${styles.paragraph} max-w-[1200px] mt-5`}>
